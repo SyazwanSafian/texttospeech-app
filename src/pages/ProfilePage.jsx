@@ -5,7 +5,7 @@ import History from "../components/History";
 export default function ProfilePage() {
     return (
         <>
-            <h1>This is the profile page.</h1>
+            <h1>Welcome, user.</h1>
             <Container className="my-5">
                 <History />
             </Container>

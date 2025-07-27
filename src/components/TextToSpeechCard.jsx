@@ -12,9 +12,6 @@ export default function TextToSpeechCard() {
     const fileInputRef = useRef(null);
     const URL = import.meta.env.VITE_API_BASE_URL;
 
-    const formData = new FormData();
-    const userId = currentUser?.uid;
-
     const handleConvert = async () => {
         if (!currentUser) {
             alert("You must be logged in to use the service.");
