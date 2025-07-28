@@ -27,9 +27,9 @@ export default function AuthProvider({ children }) {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setCurrentUser(user);
             setLoading(false);
+
             if (user) {
                 setModalShow(null);
-                navigate("/profile");
             }
         });
         return () => unsubscribe();

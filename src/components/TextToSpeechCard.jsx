@@ -62,12 +62,12 @@ export default function TextToSpeechCard() {
                             controlId="textInput"
 
                         >
-                            <Form.Label>Enter text</Form.Label>
+                            <Form.Label>Text Input</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 value={text}
                                 rows={5}
-                                placeholder="Type or paste your text here..."
+                                placeholder="Convert your text here.."
                                 onChange={(event) => setText(event.target.value)}
                                 disabled={file !== null}
                             />
@@ -113,7 +113,7 @@ export default function TextToSpeechCard() {
                         {/* Reset Button */}
                         <div className="d-flex justify-content-end">
                             <Button
-                                variant="primary"
+                                variant="danger"
                                 type="button"
                                 onClick={() => {
                                     setText("");
