@@ -10,7 +10,6 @@ export default function EditProfile() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [phone, setPhone] = useState("");
-    const [notify, setNotify] = useState(true);
     const [photo, setPhoto] = useState(null);
     const [photoPreview, setPhotoPreview] = useState(null);
     const { currentUser } = useAuth();
