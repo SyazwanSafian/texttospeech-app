@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
 import { Dropdown, Button, Image } from "react-bootstrap";
 import { useAuth } from "./AuthProvider";
+import { useTheme } from "./ThemeContext";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { Link } from "react-router-dom";
 
 export default function UserMenu() {
     const { currentUser, handleLogout } = useAuth();
-    const [darkMode, setDarkMode] = useState(false);
+    const { darkMode, toggleDarkMode } = useTheme();
     const [photoURL, setPhotoURL] = useState(null);
     const [displayName, setDisplayName] = useState("");
-
-    const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
     useEffect(() => {
         const fetchProfileData = async () => {

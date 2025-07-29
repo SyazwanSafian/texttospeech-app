@@ -1,5 +1,6 @@
 import { Col, Button, Row, Modal, Form } from "react-bootstrap";
 import { useAuth } from "./AuthProvider";
+import logo from "../assets/logo.png";
 
 export default function StartButton() {
     const { handleGoogleLogin, setEmail, setPassword, handleLogin, handleRegister, modalShow, handleClose, handleShowLogin, handleShowRegister } = useAuth();
@@ -21,12 +22,20 @@ export default function StartButton() {
                 centered
             >
                 <Row>
-                    <Col md={4}>
-                        <h1>Image will be placed here.</h1>
+                    <Col md={4} className="text-white p-4 d-flex flex-column justify-content-center align-items-center" style={{ background: 'linear-gradient(to bottom, #1d4ed8, #3b82f6)', borderTopLeftRadius: '1rem', borderBottomLeftRadius: '1rem' }}>
+                        <img
+                            src={logo}
+                            alt="Voiceover Logo"
+                            className="mb-4"
+                            style={{ width: "60px", height: "60px" }}
+                        />
+                        <h3 className="fw-bold">Voiceover</h3>
+                        <p className="text-center mt-2" style={{ fontSize: "0.9rem", maxWidth: "220px" }}>
+                            Text to Speech Converter<br />Multiple Languages available.
+                        </p>
                     </Col>
+
                     <Col>
-
-
                         <Modal.Body>
                             <h2 className="m-4 fw-bold text-center">
                                 {modalShow === "register" ? "Create your account" : "Log in to your account"}

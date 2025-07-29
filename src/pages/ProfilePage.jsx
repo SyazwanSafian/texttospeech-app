@@ -14,7 +14,7 @@ export default function ProfilePage() {
             </Container>
 
             <Container className="my-5">
-                <h2>Your past conversions</h2>
+                <h2>Conversions History</h2>
                 <History />
             </Container>
         </>

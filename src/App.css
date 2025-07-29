@@ -1,0 +1,275 @@
+/* Light mode (default) */
+body.light {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Gray-Based Dark mode */
+body.dark {
+    background-color: #2d3748 !important;
+    /* Softer dark blue-gray */
+    color: #e2e8f0 !important;
+}
+
+/* Navbar styling for dark mode */
+body.dark .navbar {
+    background-color: #4a5568 !important;
+    /* Lighter gray for navbar */
+    border-bottom: 1px solid #718096;
+}
+
+body.dark .navbar-brand {
+    color: #ffffff !important;
+}
+
+body.dark .navbar-nav .nav-link {
+    color: #e2e8f0 !important;
+}
+
+body.dark .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    background-color: #5a6578 !important;
+    border-radius: 4px;
+}
+
+body.dark .navbar-toggler {
+    border-color: #718096 !important;
+}
+
+body.dark .navbar-toggler-icon {
+    filter: invert(1);
+    /* Makes the hamburger icon white */
+}
+
+/* Card components */
+body.dark .card {
+    background-color: #3a4a5c !important;
+    /* Softer card background */
+    color: #e2e8f0 !important;
+    border-color: #5a6578 !important;
+}
+
+body.dark .card-header {
+    background-color: #4a5568 !important;
+    border-bottom-color: #5a6578 !important;
+    color: #ffffff !important;
+}
+
+body.dark .card-footer {
+    background-color: #4a5568 !important;
+    border-top-color: #5a6578 !important;
+}
+
+/* Button components */
+body.dark .btn-primary {
+    background-color: #4299e1 !important;
+    border-color: #4299e1 !important;
+    color: #ffffff !important;
+}
+
+body.dark .btn-primary:hover {
+    background-color: #3182ce !important;
+    border-color: #3182ce !important;
+}
+
+body.dark .btn-secondary {
+    background-color: #5a6578 !important;
+    border-color: #5a6578 !important;
+    color: #e2e8f0 !important;
+}
+
+body.dark .btn-secondary:hover {
+    background-color: #6b7588 !important;
+    border-color: #6b7588 !important;
+}
+
+body.dark .btn-outline-secondary {
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .btn-outline-secondary:hover {
+    background-color: #5a6578 !important;
+    border-color: #5a6578 !important;
+    color: #ffffff !important;
+}
+
+body.dark .btn-danger {
+    background-color: #e53e3e !important;
+    border-color: #e53e3e !important;
+}
+
+body.dark .btn-danger:hover {
+    background-color: #c53030 !important;
+    border-color: #c53030 !important;
+}
+
+/* Form components */
+body.dark .form-control {
+    background-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .form-control:focus {
+    background-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    border-color: #4299e1 !important;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25) !important;
+}
+
+body.dark .form-control::placeholder {
+    color: #a0aec0 !important;
+}
+
+body.dark .form-select {
+    background-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .form-select:focus {
+    background-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    border-color: #4299e1 !important;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25) !important;
+}
+
+body.dark .form-label {
+    color: #e2e8f0 !important;
+}
+
+/* Dropdown components */
+body.dark .dropdown-menu {
+    background-color: #4a5568 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .dropdown-item {
+    color: #e2e8f0 !important;
+    background-color: transparent !important;
+}
+
+body.dark .dropdown-item:hover {
+    color: #ffffff !important;
+    background-color: #5a6578 !important;
+}
+
+body.dark .dropdown-divider {
+    border-top-color: #718096 !important;
+}
+
+/* Alert components */
+body.dark .alert {
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .alert-success {
+    background-color: #38a169 !important;
+    color: #ffffff !important;
+    border-color: #38a169 !important;
+}
+
+body.dark .alert-danger {
+    background-color: #e53e3e !important;
+    color: #ffffff !important;
+    border-color: #e53e3e !important;
+}
+
+body.dark .alert-warning {
+    background-color: #d69e2e !important;
+    color: #ffffff !important;
+    border-color: #d69e2e !important;
+}
+
+body.dark .alert-info {
+    background-color: #4299e1 !important;
+    color: #ffffff !important;
+    border-color: #4299e1 !important;
+}
+
+/* Text and headings */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+    color: #ffffff !important;
+}
+
+body.dark p,
+body.dark span,
+body.dark label {
+    color: #e2e8f0 !important;
+}
+
+body.dark .text-muted {
+    color: #a0aec0 !important;
+}
+
+/* Table components */
+body.dark .table {
+    color: #e2e8f0 !important;
+}
+
+body.dark .table th {
+    background-color: #4a5568 !important;
+    color: #ffffff !important;
+    border-color: #718096 !important;
+}
+
+body.dark .table td {
+    background-color: #3a4a5c !important;
+    border-color: #5a6578 !important;
+}
+
+body.dark .table-striped>tbody>tr:nth-of-type(odd)>td {
+    background-color: #4a5568 !important;
+}
+
+/* Modal components */
+body.dark .modal-content {
+    background-color: #3a4a5c !important;
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+body.dark .modal-header {
+    background-color: #4a5568 !important;
+    border-bottom-color: #718096 !important;
+}
+
+body.dark .modal-footer {
+    background-color: #4a5568 !important;
+    border-top-color: #718096 !important;
+}
+
+body.dark .close {
+    color: #e2e8f0 !important;
+}
+
+/* Audio controls */
+body.dark audio {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #4a5568 !important;
+}
+
+/* Scrollbar styling for dark mode */
+body.dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark ::-webkit-scrollbar-track {
+    background-color: #2d3748;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+    background-color: #5a6578;
+    border-radius: 4px;
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #6b7588;
+}
