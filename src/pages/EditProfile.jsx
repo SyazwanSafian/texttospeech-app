@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Container, Row, Col, Card, Form, Button, Image } from "react-bootstrap";
 import { useAuth } from "../components/AuthProvider";
 import { doc, setDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../firebase.js";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { storage } from "../firebase";
+import { storage } from "../firebase.js";
 
 export default function EditProfile() {
     const [firstName, setFirstName] = useState("");
